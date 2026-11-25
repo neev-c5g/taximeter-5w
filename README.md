@@ -1,6 +1,6 @@
 # 택시미터기 1.0.1
 
-전체 화면에서 운행과 지역 요금을 설정하고 운행기록을 조회합니다. [분할화면 커스텀](https://github.com/neev-c5g/custom-split-widgets)을 함께 설치하면 오른쪽 위젯에서 같은 운행 상태를 확인하고 앱으로 이동할 수 있습니다. 앱에서 변경한 지역은 다음 운행과 위젯에 반영됩니다.
+전체 화면에서 운행과 지역 요금을 설정하고 운행기록을 조회합니다. [분할화면 커스텀](https://github.com/neev-c5g/custom-split-widgets-5w)을 함께 설치하면 오른쪽 위젯에서 같은 운행 상태를 확인하고 앱으로 이동할 수 있습니다. 앱에서 변경한 지역은 다음 운행과 위젯에 반영됩니다.
 
 - [NEMESIS USB 설치 ZIP](taximeter-experiment-1.0.1-nemesis.zip)
 - [NEMESIS 패키지 ZIP](taximeter-experiment-1.0.1-nemesis-package.zip)
