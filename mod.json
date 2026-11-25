@@ -1,0 +1,11 @@
+{
+  "id": "taximeter-experiment",
+  "name": "택시미터기",
+  "version": "1.0.1",
+  "hmgapi": ">=1.0.2",
+  "description": "전체 화면과 커스텀 분할 위젯을 지원하는 택시미터기",
+  "live": true,
+  "apps": [ { "apk": "app/Taximeter.apk", "package": "dev.ev6.taximeter.prototype" } ],
+  "provides": { "launcher": [ { "id": "taximeter", "package": "dev.ev6.taximeter.prototype", "class": ".MeterActivity" } ] },
+  "services": [ { "name": "speed", "script": "svc/start.sh", "user": "root", "start": "android", "restart": true } ]
+}

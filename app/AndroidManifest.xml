@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dev.ev6.taximeter.prototype" android:versionCode="15" android:versionName="1.0.1">
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+  <permission android:name="dev.ev6.taximeter.prototype.permission.BIND_SPLIT_METER" android:protectionLevel="signatureOrSystem" />
+  <application android:label="택시미터기" android:icon="@drawable/ic_launcher" android:allowBackup="false" android:theme="@android:style/Theme.Holo.NoActionBar">
+    <activity android:name=".MeterActivity" android:label="택시미터기" android:exported="true">
+      <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+    </activity>
+    <activity android:name=".HistoryActivity" android:exported="false" />
+    <receiver android:name=".MeterWidget" android:label="택시미터기" android:exported="true">
+      <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/taximeter_widget" />
+    </receiver>
+    <service android:name=".MeterService" android:exported="false" />
+    <service android:name=".SplitMeterProvider" android:label="택시미터기" android:exported="true" android:permission="dev.ev6.taximeter.prototype.permission.BIND_SPLIT_METER">
+      <intent-filter><action android:name="kr.blackr.customsplit.action.WIDGET_PROVIDER" /></intent-filter>
+      <meta-data android:name="kr.blackr.customsplit.widget.ID" android:value="taximeter" />
+      <meta-data android:name="kr.blackr.customsplit.widget.TITLE" android:value="택시미터기" />
+      <meta-data android:name="kr.blackr.customsplit.widget.VERSION" android:value="1" />
+    </service>
+  </application>
+</manifest>
